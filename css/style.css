@@ -1,10 +1,65 @@
 :root {
   /* Colors */
   --color-white: rgb(245, 245, 245);
+  --color-white--translucent: rgba(245, 245, 245, 0.9);
   --color-blue: rgb(0, 0, 255);
   --color-black: rgb(15, 15, 15);
   /* Implementation */
   --color-bg-white: var(--color-white);
   --color-bg-blue: var(--color-blue);
   --color-bg-black: var(--color-bg-black);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: crosshair;
+}
+
+@font-face {
+  font-family: "Ladi-Weak";
+  src: url("Ladi-Weak.woff") format("woff"), url("Ladi-Weak.woff2") format("woff2");
+}
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: var(--color-white--translucent);
+  width: clamp(18rem, 24rem + 3.7vw, 35rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 1.2rem 1.8rem 1.2rem;
+  border-radius: 3rem;
+  -webkit-filter: drop-shadow(0 0 0.5rem var(--color-blue));
+          filter: drop-shadow(0 0 0.5rem var(--color-blue));
+  top: 2rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.nav-bar__element {
+  color: var(--color-blue);
+  margin: 0 0.7rem;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 0.56vw + 1.28rem, 2rem);
+}
+
+.nav-bar__element:hover {
+  font-style: italic;
+  letter-spacing: 0.1px;
+  /* Letter-spacing applied to avoid reposition of words within the nav-bar when hovering due to italic style */
+}
+
+.nav-bar__element:visited {
+  color: var(--color-blue);
+  font-style: normal;
 }

@@ -1,0 +1,35 @@
+.nav-bar {
+    display: flex;
+    position: fixed;
+    background-color: var(--color-white--translucent);
+    width: clamp(18rem, 24rem + 3.7vw, 35rem);
+    justify-content: center;
+    list-style: none;
+    padding: 1.2rem 1.8rem 1.2rem;
+    border-radius: 3rem;
+    filter: drop-shadow(0 0 0.5rem var(--color-blue));
+    top: 2rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  
+  .nav-bar__element {
+    color: var(--color-blue);
+    margin: 0 0.7rem;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 0.56vw + 1.28rem, 2rem);
+  }
+  
+  .nav-bar__element:hover {
+    font-style: italic;
+    letter-spacing: 0.1px;
+    /* Letter-spacing applied to avoid reposition of words within the nav-bar when hovering due to italic style */
+  }
+  
+  .nav-bar__element:visited {
+    color: var(--color-blue);
+    font-style: normal;
+  }
+  
+  

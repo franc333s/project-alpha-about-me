@@ -1,0 +1,23 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    cursor: crosshair;
+  }
+
+//   @font-face {
+//     font-family: 'ladiweak';
+//     src: url('https://esatdev.com/2022/marina/about-me/fonts/ladi-weak-webfont.woff2') format('woff2'),
+//          url('https://esatdev.com/2022/marina/about-me/fonts/ladi-weak-webfont.woff') format('woff');
+//     font-weight: normal;
+//   }
+
+  @font-face {
+    font-family: 'Ladi-Weak';
+    src: url('Ladi-Weak.woff') format('woff'),
+         url('Ladi-Weak.woff2') format('woff2');
+  }
