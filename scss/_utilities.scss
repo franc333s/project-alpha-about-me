@@ -6,8 +6,8 @@
 .flex-buttons {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  padding: 6rem 0 6rem;
+  gap: var(--unit-base);
+  padding: var(--unit-md) 0 var(--unit-md);
 }
 
 //Display flex column
@@ -29,41 +29,21 @@
   min-height: var(--vh-100);
 }
 
-// General margins and other margins
-
-.padding--small {
-  padding: 6rem 3rem 9rem;
-}
-
-.padding--medium {
-  padding: 9rem 3rem;
-}
-
-.padding--large {
-  padding: 18rem 3rem 0;
-}
-
+// Other margin utilities
 .p--main + .p--main {
-  padding-top: 3rem;
+  padding-top: var(--unit-base);
 }
 
 .margin-top--large {
-  margin-top: 12rem;
+  margin-top: var(--unit-xl);
 }
 
 .margin-bottom--large {
-  margin-bottom: 12rem;
+  margin-bottom: var(--unit-xl);
 }
 
 
 // Colors
-
-// REVISAR SI ME PUEDO CARGAR LA CLASE DE ABAJO
-.bg-color--white {
-    background-color: var(--color-bg-white);
-    color: var(--color-bg-black);
-  }
-  
   .bg-color--blue {
     background-color: var(--color-bg-blue);
     color: var(--color-white);
@@ -82,13 +62,13 @@
 
 
 // REVISAR CANVIAR EL CODIGO DE LADI
-  .font-fam--ladi-weak {
+  .font-fam--aux {
     font-family: "Ladi-Weak";
   }
   
-  .font-fam--ladi-weak-large {
+  .font-fam--aux-large {
     font-family: "Ladi-Weak";
-    font-size: clamp(8.5rem, 3.98vw + 6.91rem, 12rem);
-    padding-bottom: 3rem;
+    font-size: clamp(var(--unit-lg), 3.98vw + 6.91rem, var(--unit-xl));
+    padding-bottom: var(--unit-base);
 }
 

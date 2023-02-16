@@ -1,0 +1,13 @@
+// General margins
+
+.padding--small {
+    padding: var(--unit-md) var(--unit-base) var(--unit-lg);
+  }
+  
+  .padding--medium {
+    padding: var(--unit-lg) var(--unit-base);
+  }
+  
+  .padding--large {
+    padding: var(--unit-xxxl) var(--unit-base) 0;
+  }

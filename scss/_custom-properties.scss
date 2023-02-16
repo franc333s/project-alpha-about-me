@@ -5,8 +5,15 @@
     --color-blue: rgb(0, 0, 255);
     --color-black: rgb(15, 15, 15);
 
-    /* Units */
+    /* Color implementation */
+    --color-bg-white: var(--color-white);
+    --color-bg-blue: var(--color-blue);
+    --color-bg-black: var(--color-black);
 
+
+    /* Units */
+    --unit-base: 3rem;
+    
     // Viewports
     --vw-100: 100vw;
     --vh-100: 100vh;
@@ -14,10 +21,17 @@
     --vw-50: 50vw;
     --vh-50: 50vh;
 
+    /* Units implementation */
+    --unit-sm: calc(.5 * var(--unit-base)); // 1.5
+    --unit-md: calc(2 * var(--unit-base)); // 6
+    --unit-lg: calc(3 * var(--unit-base)); // 9
+    --unit-xl: calc(4 * var(--unit-base)); // 12
+    --unit-xxl:calc(5 * var(--unit-base)); // 15
+    --unit-xxxl: calc(6 * var(--unit-base)); // 18
 
-    /* Implementation */
-    --color-bg-white: var(--color-white);
-    --color-bg-blue: var(--color-blue);
-    --color-bg-black: var(--color-black);
+
+
+
+    
 
 }

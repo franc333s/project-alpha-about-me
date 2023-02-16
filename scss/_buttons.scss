@@ -6,9 +6,9 @@ button,
   text-align: center;
   text-decoration: none;
   border: 2px solid var(--color-white);
-  border-radius: 10rem;
-  padding: 1.5rem 6rem;
-  width: 10rem;
+  border-radius: var(--unit-lg);
+  padding: var(--unit-sm) var(--unit-base);
+  width: var(--unit-xl);
   transition: 0.3s;
 }
 
