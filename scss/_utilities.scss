@@ -1,0 +1,94 @@
+.text-align--center {
+  text-align: center;
+}
+
+//Display flex only for buttons
+.flex-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 6rem 0 6rem;
+}
+
+//Display flex column
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+// Center items with display flex
+.align-item--center {
+  align-self: center;
+}
+
+.box-sizing--border-box {
+  box-sizing: border-box;
+}
+
+.full-height {
+  min-height: var(--vh-100);
+}
+
+// General margins and other margins
+
+.padding--small {
+  padding: 6rem 3rem 9rem;
+}
+
+.padding--medium {
+  padding: 9rem 3rem;
+}
+
+.padding--large {
+  padding: 18rem 3rem 0;
+}
+
+.p--main + .p--main {
+  padding-top: 3rem;
+}
+
+.margin-top--large {
+  margin-top: 12rem;
+}
+
+.margin-bottom--large {
+  margin-bottom: 12rem;
+}
+
+
+// Colors
+
+// REVISAR SI ME PUEDO CARGAR LA CLASE DE ABAJO
+.bg-color--white {
+    background-color: var(--color-bg-white);
+    color: var(--color-bg-black);
+  }
+  
+  .bg-color--blue {
+    background-color: var(--color-bg-blue);
+    color: var(--color-white);
+  }
+  
+  .bg-color--black {
+    background-color: var(--color-bg-black);
+    color: var(--color-white);
+  }
+  
+  .font-color--blue {
+    color: var(--color-blue);
+  }
+  
+
+
+
+// REVISAR CANVIAR EL CODIGO DE LADI
+  .font-fam--ladi-weak {
+    font-family: "Ladi-Weak";
+  }
+  
+  .font-fam--ladi-weak-large {
+    font-family: "Ladi-Weak";
+    font-size: clamp(8.5rem, 3.98vw + 6.91rem, 12rem);
+    padding-bottom: 3rem;
+}
+

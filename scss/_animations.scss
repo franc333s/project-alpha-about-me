@@ -1,0 +1,19 @@
+/* Name animation */
+
+.svg-name {
+    fill: rgb(245, 245, 245);
+    align-self: flex-end;
+    position: absolute;
+    bottom: 5rem;
+    right: 2.5rem;
+  }
+
+  .rotation {
+    animation: rotate 8s linear infinite;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }

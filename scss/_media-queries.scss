@@ -1,0 +1,101 @@
+
+@media screen and (min-width: 580px) {
+    .padding--small {
+      padding: 5rem;
+    }
+  
+    .padding--medium {
+      padding: 5rem;
+    }
+  
+    .padding--large {
+      padding: 20rem 5rem 0;
+    }
+  }
+  
+  @media screen and (min-width: 950px) {
+    .footer {
+      display: flex;
+      gap: 3rem;
+    }
+  
+    .half-viewport {
+      width: 50vw;
+    }
+  
+    .padding--small {
+      padding: 7.5rem;
+    }
+  
+    .padding--medium {
+      padding: 7.5rem;
+    }
+  
+    .padding--large {
+      padding: 20rem 7.5rem 0;
+    }
+    
+    .svg-name {
+      bottom: 10rem;
+      right: 7.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .section-split {
+      display: flex;
+    }
+  
+    [alt="profile-picture-marina"] {
+      max-width: 50vw;
+      height: 100%;
+      object-fit: none;
+    }
+  
+    .padding--small {
+      padding: 10rem 10rem 13rem;
+    }
+  
+    .padding--medium {
+      padding: 13rem 10rem;
+    }
+  
+    .padding--large {
+      padding: 20rem 10rem 0;
+    }
+  
+    .margin-top--large {
+      margin-top: 20rem;
+    }
+  
+    .svg-name {
+      bottom: 10rem;
+      right: 10rem;
+    }
+  }
+  
+  @media screen and (min-width:950px) and (max-width:1439px){
+    .p--main--variation {
+      font-size: 3.7rem;
+    }
+
+// QUE ES ESTO???/
+    .relative-padding {
+      padding: 7.5rem 6.5rem 10rem;
+    }
+  
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .padding--small {
+      padding: 10rem 10rem 13rem;
+    }
+  
+    .padding--medium {
+      padding: 13rem 10rem;
+    }
+  
+    .padding--large {
+      padding: 20rem 10rem 0;
+    }
+  }

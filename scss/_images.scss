@@ -1,0 +1,14 @@
+// Profile picture
+
+img[alt="profile-picture-marina"] {
+    width: 100vw;
+    object-fit: cover;
+  }
+
+/* Illustration animated */
+
+img[alt="yellow-animation"] {
+  max-height: 50rem;
+  display: block;
+  margin: 0 auto;
+}

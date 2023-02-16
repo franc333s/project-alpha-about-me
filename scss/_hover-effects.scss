@@ -1,0 +1,56 @@
+/* Blue gradient on hover */
+
+.linear-gradient--blue {
+  background: linear-gradient(
+    to right,
+    rgb(15, 15, 15) 0%,
+    rgb(15, 15, 15) 15%,
+    rgb(15, 15, 15) 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.5s ease;
+  background-size: 200% 100%;
+  width: fit-content;
+}
+
+.linear-gradient--blue:hover {
+  background: linear-gradient(
+    to right,
+    rgb(15, 15, 15) 0%,
+    rgb(15, 15, 15) 15%,
+    rgb(0, 0, 255) 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position-x: left;
+  background-size: 100% 100%;
+  /* background-clip added without webkit to ensure compatibility */
+}
+
+/* Images on hover effect */
+
+.reveal-image {
+  position: relative;
+  color: rgb(245, 245, 245);
+  text-decoration-line: underline;
+  text-decoration-thickness: 2.5px;
+}
+
+.reveal-image:hover .hide {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  left: -15rem;
+  top: -10rem;
+}
+
+.hide {
+  display: none;
+}
+
+.reveal-image:visited {
+  color: rgb(245, 245, 245);
+}

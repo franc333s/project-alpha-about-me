@@ -1,0 +1,20 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(5.2rem, 7.73vw + 2.11rem, 12rem);
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: clamp(3rem, 1.7vw + 2.32rem, 4.5rem);
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+

@@ -4,10 +4,15 @@
   --color-white--translucent: rgba(245, 245, 245, 0.9);
   --color-blue: rgb(0, 0, 255);
   --color-black: rgb(15, 15, 15);
+  /* Units */
+  --vw-100: 100vw;
+  --vh-100: 100vh;
+  --vw-50: 50vw;
+  --vh-50: 50vh;
   /* Implementation */
   --color-bg-white: var(--color-white);
   --color-bg-blue: var(--color-blue);
-  --color-bg-black: var(--color-bg-black);
+  --color-bg-black: var(--color-black);
 }
 
 html {
@@ -18,6 +23,8 @@ html {
 body {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
   cursor: crosshair;
 }
 
@@ -62,4 +69,352 @@ body {
 .nav-bar__element:visited {
   color: var(--color-blue);
   font-style: normal;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(5.2rem, 7.73vw + 2.11rem, 12rem);
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: clamp(3rem, 1.7vw + 2.32rem, 4.5rem);
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.p--small {
+  font-size: 2rem;
+}
+
+.p--main {
+  font-size: clamp(3rem, 1.7vw + 2.32rem, 4.5rem);
+  line-height: 150%;
+}
+
+.p--big {
+  font-size: clamp(3.5rem, 1.14vw + 3.05rem, 4.5rem);
+  font-weight: 300;
+}
+
+button,
+.btn {
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: clamp(1.5rem, 2.1rem + 0.71vw, 3rem);
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--color-white);
+  border-radius: 10rem;
+  padding: 1.5rem 6rem;
+  width: 10rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+.btn-secondary--black {
+  color: var(--color-black);
+  text-decoration: underline;
+  text-decoration-thickness: 0.25rem;
+}
+
+.btn-secondary--black:hover {
+  font-style: italic;
+  letter-spacing: 0.4px;
+}
+
+.btn-secondary--black:visited {
+  color: var(--color-black);
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.flex-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  padding: 6rem 0 6rem;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.align-item--center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.box-sizing--border-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.full-height {
+  min-height: var(--vh-100);
+}
+
+.padding--small {
+  padding: 6rem 3rem 9rem;
+}
+
+.padding--medium {
+  padding: 9rem 3rem;
+}
+
+.padding--large {
+  padding: 18rem 3rem 0;
+}
+
+.p--main + .p--main {
+  padding-top: 3rem;
+}
+
+.margin-top--large {
+  margin-top: 12rem;
+}
+
+.margin-bottom--large {
+  margin-bottom: 12rem;
+}
+
+.bg-color--white {
+  background-color: var(--color-bg-white);
+  color: var(--color-bg-black);
+}
+
+.bg-color--blue {
+  background-color: var(--color-bg-blue);
+  color: var(--color-white);
+}
+
+.bg-color--black {
+  background-color: var(--color-bg-black);
+  color: var(--color-white);
+}
+
+.font-color--blue {
+  color: var(--color-blue);
+}
+
+.font-fam--ladi-weak {
+  font-family: "Ladi-Weak";
+}
+
+.font-fam--ladi-weak-large {
+  font-family: "Ladi-Weak";
+  font-size: clamp(8.5rem, 3.98vw + 6.91rem, 12rem);
+  padding-bottom: 3rem;
+}
+
+img[alt=profile-picture-marina] {
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Illustration animated */
+img[alt=yellow-animation] {
+  max-height: 50rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Name animation */
+.svg-name {
+  fill: rgb(245, 245, 245);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  bottom: 5rem;
+  right: 2.5rem;
+}
+
+.rotation {
+  -webkit-animation: rotate 8s linear infinite;
+          animation: rotate 8s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/* Blue gradient on hover */
+.linear-gradient--blue {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(15, 15, 15)), color-stop(15%, rgb(15, 15, 15)), color-stop(60%, rgb(15, 15, 15)));
+  background: linear-gradient(to right, rgb(15, 15, 15) 0%, rgb(15, 15, 15) 15%, rgb(15, 15, 15) 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  background-size: 200% 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.linear-gradient--blue:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(15, 15, 15)), color-stop(15%, rgb(15, 15, 15)), color-stop(60%, rgb(0, 0, 255)));
+  background: linear-gradient(to right, rgb(15, 15, 15) 0%, rgb(15, 15, 15) 15%, rgb(0, 0, 255) 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position-x: left;
+  background-size: 100% 100%;
+  /* background-clip added without webkit to ensure compatibility */
+}
+
+/* Images on hover effect */
+.reveal-image {
+  position: relative;
+  color: rgb(245, 245, 245);
+  text-decoration-line: underline;
+  text-decoration-thickness: 2.5px;
+}
+
+.reveal-image:hover .hide {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  left: -15rem;
+  top: -10rem;
+}
+
+.hide {
+  display: none;
+}
+
+.reveal-image:visited {
+  color: rgb(245, 245, 245);
+}
+
+@media screen and (min-width: 580px) {
+  .padding--small {
+    padding: 5rem;
+  }
+  .padding--medium {
+    padding: 5rem;
+  }
+  .padding--large {
+    padding: 20rem 5rem 0;
+  }
+}
+@media screen and (min-width: 950px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+  }
+  .half-viewport {
+    width: 50vw;
+  }
+  .padding--small {
+    padding: 7.5rem;
+  }
+  .padding--medium {
+    padding: 7.5rem;
+  }
+  .padding--large {
+    padding: 20rem 7.5rem 0;
+  }
+  .svg-name {
+    bottom: 10rem;
+    right: 7.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-split {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  [alt=profile-picture-marina] {
+    max-width: 50vw;
+    height: 100%;
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  .padding--small {
+    padding: 10rem 10rem 13rem;
+  }
+  .padding--medium {
+    padding: 13rem 10rem;
+  }
+  .padding--large {
+    padding: 20rem 10rem 0;
+  }
+  .margin-top--large {
+    margin-top: 20rem;
+  }
+  .svg-name {
+    bottom: 10rem;
+    right: 10rem;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1439px) {
+  .p--main--variation {
+    font-size: 3.7rem;
+  }
+  .relative-padding {
+    padding: 7.5rem 6.5rem 10rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .padding--small {
+    padding: 10rem 10rem 13rem;
+  }
+  .padding--medium {
+    padding: 13rem 10rem;
+  }
+  .padding--large {
+    padding: 20rem 10rem 0;
+  }
+}
+.boder-top--solid {
+  text-align: right;
+  border: 1px solid rgb(245, 245, 245);
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  padding-top: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
