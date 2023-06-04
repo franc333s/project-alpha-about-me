@@ -10,14 +10,12 @@
     --color-bg-blue: var(--color-blue);
     --color-bg-black: var(--color-black);
 
-
     /* Units */
     --unit-base: 3rem;
     
     // Viewports
     --vw-100: 100vw;
     --vh-100: 100vh;
-
     --vw-50: 50vw;
     --vh-50: 50vh;
 
@@ -28,10 +26,4 @@
     --unit-xl: calc(4 * var(--unit-base)); // 12
     --unit-xxl:calc(5 * var(--unit-base)); // 15
     --unit-xxxl: calc(6 * var(--unit-base)); // 18
-
-
-
-
-    
-
 }
