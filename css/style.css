@@ -38,11 +38,7 @@ body {
 
 @font-face {
   font-family: "Ladi-Weak";
-<<<<<<< HEAD
   src: url("../fonts/Ladi-Weak.woff") format("woff"), url("../fonts/Ladi-Weak.woff2") format("woff2");
-=======
-  src: url("https://github.com/franc333s/project-alpha-about-me/blob/master/fonts/Ladi-Weak.woff") format("woff"), url("https://github.com/franc333s/project-alpha-about-me/blob/master/fonts/Ladi-Weak.woff2") format("woff2");
->>>>>>> 41b6c82fbc8593cfd875fbf9e35aa50652dd2832
 }
 .nav-bar {
   display: -webkit-box;
